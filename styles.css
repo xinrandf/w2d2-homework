@@ -169,6 +169,7 @@ footer #nondisclaimer .social .fa-instagram {
     .logo img {
         position: relative;
         bottom: 8px;
+        /* Activated for responsive navbar logo alignment */
     }
     .main-menu {
         width: 200px;
