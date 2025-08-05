@@ -26,12 +26,27 @@
           <img src="images/logo.png" alt="Great Cliffs Logo" width="100" height="100">
         </div>
         <nav class="main-menu">
-          <ul class="navbar-nav">
+          <!-- Desktop Menu -->
+          <ul class="navbar-nav desktop-menu">
             <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="cliffs.html">Cliffs</a></li>
             <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
+          <!-- Mobile Menu -->
+          <div class="mobile-menu">
+            <button class="mobile-toggle" onclick="toggleMobileMenu()">
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+            </button>
+            <ul class="mobile-dropdown" id="mobileDropdown">
+              <li class="mobile-nav-item active"><a href="index.html">Home</a></li>
+              <li class="mobile-nav-item"><a href="cliffs.html">Cliffs</a></li>
+              <li class="mobile-nav-item"><a href="activities.html">Activities</a></li>
+              <li class="mobile-nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -116,6 +131,22 @@
     <!-- Bootstrap Popper -->
 
     <!-- Bootstrap JS -->
+
+    <script>
+    function toggleMobileMenu() {
+        const dropdown = document.getElementById('mobileDropdown');
+        dropdown.classList.toggle('show');
+    }
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(event) {
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const dropdown = document.getElementById('mobileDropdown');
+        if (!mobileMenu.contains(event.target)) {
+            dropdown.classList.remove('show');
+        }
+    });
+    </script>
 
   </body>
 </html>
