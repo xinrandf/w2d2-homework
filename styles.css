@@ -1,3 +1,27 @@
+/* Cliffs grid styles */
+.cliff-grid-card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 400px;
+}
+.cliff-grid-title {
+    background: #8b2323;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5em 0;
+    letter-spacing: 1px;
+}
+.cliff-grid-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
 #contact header {
     background: no-repeat lightgrey url(images/cliff_rock.jpg);
     background-size: 1500px;
