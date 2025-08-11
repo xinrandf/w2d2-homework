@@ -1,3 +1,7 @@
+#contact header {
+    background: no-repeat lightgrey url(images/cliff_rock.jpg);
+    background-size: 1500px;
+}
 /* Header */
 header {
     width: 100%;
@@ -6,6 +10,14 @@ header {
 }
 #home header {
     background:  no-repeat lightgrey url(images/cliff_ocean.jpg);
+    background-size: 1500px;
+}
+#activities header {
+    background: no-repeat lightgrey url(images/runfly.jpg);
+    background-size: 1500px;
+}
+#cliffs header {
+    background: no-repeat lightgrey url(images/forest_cliff.jpg);
     background-size: 1500px;
 }
 .main-header {
