@@ -1,60 +1,88 @@
+/* Activity Table Interactivity Styles */
+table td.selectable {
+    cursor: pointer;
+}
+table td.selected {
+    background-color: #b6e7a0 !important;
+    color: #2d4c1e;
+}
+table td {
+    transition: background 0.2s, color 0.2s;
+
+}
 /* Activities Table Styles */
-.activities-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 1.15em;
-    color: #222;
-    margin: 2em auto;
-    background: #fff;
+table {
+    width: 1000px;
+    margin: 4em auto 0 auto;
 }
-.activities-table th, .activities-table td {
-    border: 2px solid #a23a23;
-    padding: 0.8em 0.5em;
-    text-align: center;
-    font-weight: 500;
-}
-.activities-table th {
-    background: #4288C3;
-    color: #222;
-    font-size: 1.1em;
-}
-.activities-table tr:first-child th {
-    background: #8b2323;
-    color: #fff;
-    font-size: 1.3em;
-}
-.activities-table td {
-    background: #eafbe6;
-    color: #222;
-}
-/* Cliffs grid styles */
-.cliff-grid-card {
-    background: #fff;
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    overflow: hidden;
-    margin: 0 auto;
-    max-width: 400px;
-}
-.cliff-grid-title {
-    background: #8b2323;
+caption {
+    background: #852B1B;
+    height: 40px;
     color: #fff;
     font-size: 1.3em;
     font-weight: bold;
+    padding-top: 1em;
+}
+
+thead {
+    background: #BDE1FF;
+}
+tbody {
+    background: #EEFFE6;
+    text-align: center;
+}
+th, td {
+   width: 225px;
+   height: 75px;
+   vertical-align: middle;
+   border:solid 1px #B52b1b;
+}
+th:first-child {
+    width: 125px;
+    height: 50px;
+    background: #4977D1;
+    color: #fff;
+}
+
+td:first-child {
+    font-weight: bold;
+    background: #BDE1FF;
+}
+/*cliffs */
+.cliff-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em 2em;
+    justify-content: center;
+    align-items: start;
+    width: 900px;
+    margin: 2em auto;
+    padding: 0;
+}
+
+.cliff-card {
+    width: 450px;
+    margin-bottom: 2em;
+}
+
+.cliff-title {
+    background: #852B1B;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.3em;
     text-align: center;
     padding: 0.5em 0;
-    letter-spacing: 1px;
+    margin-bottom: 0;
 }
-.cliff-grid-card img {
+
+.cliff-card img {
     width: 100%;
-    height: 220px;
+    height: 200px;
     object-fit: cover;
     display: block;
 }
-#contact header {
-    background: no-repeat lightgrey url(images/cliff_rock.jpg);
-    background-size: 1500px;
-}
+
 /* Header */
 header {
     width: 100%;
