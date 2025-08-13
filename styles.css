@@ -1,3 +1,32 @@
+/* Activities Table Styles */
+.activities-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.15em;
+    color: #222;
+    margin: 2em auto;
+    background: #fff;
+}
+.activities-table th, .activities-table td {
+    border: 2px solid #a23a23;
+    padding: 0.8em 0.5em;
+    text-align: center;
+    font-weight: 500;
+}
+.activities-table th {
+    background: #4288C3;
+    color: #222;
+    font-size: 1.1em;
+}
+.activities-table tr:first-child th {
+    background: #8b2323;
+    color: #fff;
+    font-size: 1.3em;
+}
+.activities-table td {
+    background: #eafbe6;
+    color: #222;
+}
 /* Cliffs grid styles */
 .cliff-grid-card {
     background: #fff;
